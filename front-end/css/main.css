@@ -1,0 +1,83 @@
+.main {
+    padding-top: 130px;
+}
+
+.header-clients{
+    margin-bottom: 25px;
+}
+.thead-id,
+.full-name-span-az {
+    color: var(--purple);
+}
+
+.thead-cell:not(:first-child) {
+    color: var(--txt-grey);
+}
+
+.table-clients{
+width: 100%;
+border-spacing: 0px;
+}
+
+.table-container{
+    background-color: var(--white);
+    min-height: 330px;
+    margin-bottom: 40px;
+}
+.table-header{
+    background-color: var(--grey);
+}
+.thead-cell{
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+.thead-id{
+    padding-left: 20px;
+}
+.thead-full-name {
+    padding-left: 40px;
+}
+
+.span-vector {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-image: url('../img/down.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.button-add {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6px;
+    display: block;
+    width: 216px;
+    height: 44px;
+    background-color: transparent;
+    border: solid 1px var(--purple);
+    color: var(--purple);
+    cursor: pointer;
+    transition: color .3s, fill .3s, background-color .3s;
+}
+
+.button-add svg {
+    fill: var(--purple);
+    transition: fill .3s;
+    transform: translate(-2px, 1px);
+}
+.button-add:hover svg {
+    fill: white;
+}
+.button-add:hover{
+    color: white;
+    background-color: var(--purple);
+}
+.span-client {
+    cursor: pointer;
+    user-select: none;
+}

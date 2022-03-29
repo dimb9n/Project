@@ -1,0 +1,80 @@
+
+@import url('./header.css');
+@import url('./main.css');
+@import url('./modalBlock.css');
+@import url('./contacts.css');
+@import url('./clients.css');
+
+:root {
+    --txt-grey: #B0B0B0;
+    --purple:#9873FF;
+    --white: #ffffff;
+    --grey:#E5E5E5;
+    --input-grey:#C8C5D1;
+    --contact-list-grey:#F4F3F6;
+    --contacts-item-hover:#eeecf0;
+    --spase-gray:#e7e5eb;
+    --border-client:#e3e2e8;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--grey);
+}
+* {
+	box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+  }
+
+  h1{
+      margin: 0px;
+  }
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1186px;
+}
+table {
+    border-collapse: collapse;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.tooltip{
+    display:block;
+    position: absolute;
+    pointer-events: none;
+    font-size: 12px;
+    white-space: nowrap;
+    height: 30px;
+    padding: 7px 15px 7px 15px;
+    color: white;
+    background-color: #333;
+    transform: translate(-3px, -33px);
+    opacity: 0;
+    transition: opacity .3s;    
+}
+.tooltip::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top: 10px solid #333;
+}
+.del-tooltip {
+    transform: translate(-54px, -55px);
+}

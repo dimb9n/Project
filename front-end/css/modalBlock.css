@@ -1,0 +1,171 @@
+.modal-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+}
+.animation-modal-block{
+    animation: anim .2s linear forwards;
+}
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.modal-data{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    min-width: 450px;
+    padding: 25px 30px 25px 30px;
+}
+.js-modal-data{
+    transform: translate(-50%, -40%);
+}
+.modal-title {
+    display: inline-block;
+    font-size: 18px;
+   line-height: 25.51px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/closeModal.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.input-modal {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 390px;
+    width: 100%;
+    height: 25px;
+    border: 0px;
+    border-bottom: 1px solid var(--input-grey);
+    outline: none;
+}
+.lable-text{
+    color: var(--txt-grey);
+    transform: translatey(-25px);
+    transition: transform .3s, font-size .3s;
+    height: 0px;
+}
+.lable-form {
+    display: block;
+    margin-bottom: 33px;
+    cursor:text;
+}
+.input-modal:focus ~ .lable-text{
+    transform: translatey(-40px); 
+    font-size: 10px;
+}
+.up-lable {
+    transform: translatey(-40px); 
+    font-size: 10px;
+}
+
+.star {
+    color: var(--purple);
+}
+.btn-add-contacts {
+    display: block;
+    width: 100%;
+    border: 0;
+    height: 35px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.btn-add-contacts-svg::before {
+    content: url("/front-end/img/plus.svg");
+    position: absolute;
+    transform: translate(-18px, 3px);
+    transition: content .3s, color .3s, url .3s;
+}
+.btn-add-contacts-svg-hover::before {
+    content: url("/front-end/img/plushover.svg");
+    position: absolute;
+    transform: translate(-18px, 3px);
+}
+.btn-add-contacts:hover {
+    color: #9873ff;
+}
+
+
+
+.contacts-block{
+    margin: 0 -30px 0 -30px;
+    margin-bottom: 25px;
+}
+.btn-saved {
+    display: block;
+    margin: 0 auto;
+    width: 147px;
+    height: 44px;
+    border: 0;
+    color: var(--white);
+    background-color: var(--purple);
+    border: none;
+    cursor: pointer;
+    transition: color .3s, background-color .3s, border .3s;
+}
+.btn-saved:hover {
+    color: var(--purple);
+    background-color: var(--white);
+    border: solid 1px var(--purple);
+}
+.btnc-cancell {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid .5px black;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.modal-data-del {
+    text-align: center;
+}
+.modal-title-del{
+    margin-bottom: 10px;
+}
+.text-del {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 25px auto;
+    max-width: 260px;
+    width: 100%;
+}
+.modal-id {
+    font-size: 12px;
+    color: var(--txt-grey);
+}
+.block-err-text {
+    width: 255px;
+    margin: -18px auto 7px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    color: #F06A4D;
+}

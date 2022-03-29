@@ -1,0 +1,82 @@
+.client-id {
+    padding-left: 17px;
+}
+.client-full-name {
+    padding-left: 40px;
+}
+.table-road-client {
+    height: 60px;
+    border-bottom: 1px solid var(--border-client);
+}
+.client-id-data {
+    font-size: 12px;
+    color: var(--txt-grey);
+}
+.client-span{
+    font-size: 14px;
+}
+.create-data, .updated-data {
+    margin-right: 7px;
+}
+.create-time, .updated-time {
+    color: var(--txt-grey);
+}
+.contact-href {
+    display: block;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+.client-contact-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60px;
+    max-width: 130px;
+    width: 100%;
+    padding: 10px 0;
+}
+.client-btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.client-btn-change-img::before {
+    content: url('/front-end/img/contacts/change.svg');
+}
+.client-btn-delet-img::before{
+    content: url('/front-end/img/contacts/del.svg');
+}
+.client-btn-change:hover {
+    color: #9873ff;
+}
+.client-btn-change:active {
+    color: #b297fd;
+}
+.client-btn-delet:hover{
+    color: #f06a4d;
+}
+.client-btn-delet:active{
+    color: #e4907d;
+}
+.client-id-aux{
+    display: none;
+}
+
+.sort-up {
+    transform: rotate(0.5turn);
+}
+.client-href-block {
+    display: inline-block;
+    transform: translate(6px, 3px);
+}
+.client-href-block:hover > .tooltip {
+    display: block;
+    opacity: 1;
+}
+.client-href-tooltip {
+     transform: translate(-63px, -65px) !important;
+}
+.focus-client {
+    background-color: #9dfa99;
+}
